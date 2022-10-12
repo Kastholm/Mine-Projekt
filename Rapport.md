@@ -1,20 +1,20 @@
-## _Navn:_ Marc Kastholm 🙋🏽‍♂️
+# _Navn:_ Marc Kastholm 🙋🏽‍♂️
 
 -
 
-## _Opgave:_ Projekt 1.2 – Mine sweeper
+# _Opgave:_ Projekt 1.2 – Mine sweeper
 
 -
 
-## _Emne_ Web development 👨🏽‍💻
+# _Emne_ Web development 👨🏽‍💻
 
 -
 
-## _Studiets navn_ Dkpbw22a1
+# _Studiets navn_ Dkpbw22a1
 
 -
 
-## _Skolens navn_ IBA Erhversakademi
+# _Skolens navn_ IBA Erhversakademi
 
 -
 
@@ -54,7 +54,7 @@ Se [Projektbeskrivelse]
 
 [Spilleplade]: script.js
 
-### Generering af selve spillepladen, blev lavet med et for loop, for loopet generere 200 felter. Det gøres ved at [i] øges med 1 for hver af 10 gange 20 felter === 200; Derved generer for loopet, 200 divs === (bokse); Hver boks blev tildelt et className blot for at gøre materialet mere overskueligt. Dette className blev +1 grundet at index er 0, så boks 0 hed boks 1 i stedet; Til sidst apender den alle divs på spillebrættet
+ Generering af selve spillepladen, blev lavet med et for loop, for loopet generere 200 felter. Det gøres ved at [i] øges med 1 for hver af 10 gange 20 felter === 200; Derved generer for loopet, 200 divs === (bokse); Hver boks blev tildelt et className blot for at gøre materialet mere overskueligt. Dette className blev +1 grundet at index er 0, så boks 0 hed boks 1 i stedet; Til sidst apender den alle divs på spillebrættet
 ```javascript
 ;
 /* -------------------------- Genererer 10*20 bokse ------------------------- */
