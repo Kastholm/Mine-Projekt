@@ -120,10 +120,11 @@ function greenFields(box) {
 
 [localStorage]: script.js
 
-```javascript
-`Jeg laver først et array som skal indeholde spillernavn og score. Bruger script sweetAlert2 for at få en pop-up box frem hvor brugeren kan skrive sit navn. Når brugeren har skrevet sit navn og klikker tilføj kalder den 2 funktioner.Jeg Første function logger den data jeg ønsker til localStorage, her spillerens navn og den score spilleren har fået; Hvis ${historyJSON} findes JSONparsen den mit array: Jeg lader storage finde dataen, men hvis navnet allerede findes, bliver det ikke tilføjer, dog vil det opdaterer spillerens point(virker ikke grundet, se:` <
+
+Jeg laver først et array som skal indeholde spillernavn og score. Bruger script sweetAlert2 for at få en pop-up box frem hvor brugeren kan skrive sit navn. Når brugeren har skrevet sit navn og klikker tilføj kalder den 2 funktioner.Jeg Første function logger den data jeg ønsker til localStorage, her spillerens navn og den score spilleren har fået; Hvis ${historyJSON} findes JSONparsen den mit array: Jeg lader storage finde dataen, men hvis navnet allerede findes, bliver det ikke tilføjer, dog vil det opdaterer spillerens point(virker ikke grundet, se:` <
   [MinerOmring];
-`hvis spillernavnet ikke findes, vil den pushe det nye navn ind i mit array. Herefter bliver ${outputData()} kaldt, som outputter alt min data ved at fortælle hvilket materiale den skal appende til den ny generede div,herved bliver highscore feltet opdateret med nye spillernavne og deres point`;
+`hvis spillernavnet ikke findes, vil den pushe det nye navn ind i mit array. Herefter bliver ${outputData()} kaldt, som outputter alt min data ved at fortælle hvilket materiale den skal appende til den ny generede div,herved bliver highscore feltet opdateret med nye spillernavne og deres point
+```javascript
 /* -------------------------------------------------------------------------- */
 /*                             Gemmer til storage                             */
 /* -------------------------------------------------------------------------- */
