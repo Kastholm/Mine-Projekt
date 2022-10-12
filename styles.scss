@@ -1,0 +1,60 @@
+body {
+  background: #000;
+  height: 100vh;
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+}
+h1,
+h2 {
+  color: #fbfbfb;
+  text-align: center;
+}
+.board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, MINMAX(MAX(10%, 0.3rem), 5fr));
+  grid-auto-flow: row;
+  width: 20em;
+  .box {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 2px 0;
+    background-color: rgb(23, 111, 23);
+    &::after {
+      content: attr(data-value);
+      position: absolute;
+      inset: 15% 35%;
+    }
+  }
+  .mine {
+    /* background-color: rgb(176, 31, 31); */
+    &::after {
+      content: "";
+    }
+  }
+}
+
+.highScore {
+  position: fixed;
+  left: 5%;
+}
+
+.swal2-container.swal2-backdrop-show,
+.swal2-container.swal2-noanimation {
+  background-image: linear-gradient(
+    to right top,
+    #4c79aa,
+    #4476a0,
+    #3e7295,
+    #3c6e8a,
+    #3b697f,
+    #3d7387,
+    #3f7c8f,
+    #428696,
+    #45a2b0,
+    #49bfc8,
+    #51ddde,
+    #5ffbf1
+  );
+}
