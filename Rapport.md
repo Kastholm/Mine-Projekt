@@ -20,9 +20,9 @@
 
 ### [Link Til GitHub Rep](https://github.com/Kastholm/Mine-Projekt.git) 🌐
 
-Se [Rapport] ctrl+click
+Se [Rapport] 
 -
-Se [Projektbeskrivelse] ctrl+click
+Se [Projektbeskrivelse] 
 
 
 [Projektbeskrivelse]:
