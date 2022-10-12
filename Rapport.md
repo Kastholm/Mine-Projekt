@@ -18,7 +18,7 @@
 
 -
 
-# [Link Til GitHub Rep](https://github.com/Kastholm/Mine-Projekt.git) 🌐
+### [Link Til GitHub Rep](https://github.com/Kastholm/Mine-Projekt.git) 🌐
 
 Se [Rapport] ctrl+click
 -
@@ -28,11 +28,11 @@ Se [Projektbeskrivelse] ctrl+click
 [Projektbeskrivelse]:
 
 
-# I der skal produceres et spil, programmeret i JavaScript og præsenteret fra et site som skrivers i HTML5 og styles med CSS3. 
+### I der skal produceres et spil, programmeret i JavaScript og præsenteret fra et site som skrivers i HTML5 og styles med CSS3. 
  
 # Minesweeper: Et spillebræt på 10X20 felter, hvor der placeres 25 miner på tilfældige positioner. Felter kan enten holde en mine, eller et tal der indikerer hvor mange af de omkringliggende 8 felter der er miner. (Hvis tallet er 0 vises det ikke). I starten skules alle felters indhold. Når spilleren venstre-klikker på 
 
-# et felt, vil dets indhold blive vist. Hvis spilleren venstreklikker på et felt der indeholder en mine, taber de spillet. Hvis spilleren højreklikker på et felt, markerer de det som en mine. Når alle felter der ikke indeholder en mine er blevet klikket på er spillet vundet (så kun mine felter er gemt). Der scores på hvor mange miner der er markeret korrekt (25 for vundet spil), og hvor lang tid det tog. Den seneste og/eller bedste score gemmes i cookies eller localstorage, og vises frem ved de respektive spil. Der bruges Git til version styring undervejs. 
+### et felt, vil dets indhold blive vist. Hvis spilleren venstreklikker på et felt der indeholder en mine, taber de spillet. Hvis spilleren højreklikker på et felt, markerer de det som en mine. Når alle felter der ikke indeholder en mine er blevet klikket på er spillet vundet (så kun mine felter er gemt). Der scores på hvor mange miner der er markeret korrekt (25 for vundet spil), og hvor lang tid det tog. Den seneste og/eller bedste score gemmes i cookies eller localstorage, og vises frem ved de respektive spil. Der bruges Git til version styring undervejs. 
 
 
 
@@ -42,15 +42,15 @@ Der bruges Git til version styring undervejs.
 [Rapport]:
 > Dertil også et dokument der beskriver udviklingen med udgangspunkt i problemstillingen, med fokus på ikke trivielle, gerne besværlige punkter i udviklingen. Produktet beskrives udførligt. Proces præsenteredes med udgangspunkt i fremgangsmåde og overvejelser.
 
-# Projektet omhandlede at kreere et spil, der på en <[Spilleplade] med 10x20 felter lavede tilfældige minefelter, hvor brugeren ikke måtte klikke på. <[Minefelter]
+### Projektet omhandlede at kreere et spil, der på en <[Spilleplade] med 10x20 felter lavede tilfældige minefelter, hvor brugeren ikke måtte klikke på. <[Minefelter]
 
-# Hvis brugeren klikkede på et ikke mine felt, ville det ved 1 Klik vise hvor mange miner der var omkring, eller ved dobbeltklik forvandle den til en mine.<[Ikke-Minefelter]
+### Hvis brugeren klikkede på et ikke mine felt, ville det ved 1 Klik vise hvor mange miner der var omkring, eller ved dobbeltklik forvandle den til en mine.<[Ikke-Minefelter]
 
-# De resterende felter der ikke var miner, skulle fremvise, hvor mange miner der var omkring. Hvis brugeren klikkede på en mine, resulterede det i at brugeren tabte spillet. <[MinerOmkring]
+### De resterende felter der ikke var miner, skulle fremvise, hvor mange miner der var omkring. Hvis brugeren klikkede på en mine, resulterede det i at brugeren tabte spillet. <[MinerOmkring]
 
-# Den seneste og/eller bedste score gemmes i cookies eller localstorage, og vises frem ved de respektive spil <[localStorage]
+### Den seneste og/eller bedste score gemmes i cookies eller localstorage, og vises frem ved de respektive spil <[localStorage]
 
-# Der scores på hvor mange miner der er markeret korrekt (25 for vundet spil), og hvor lang tid det tog. <[MinerOmkring]
+### Der scores på hvor mange miner der er markeret korrekt (25 for vundet spil), og hvor lang tid det tog. <[MinerOmkring]
 
 [Spilleplade]: script.js
 
