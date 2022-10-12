@@ -41,7 +41,6 @@ Der bruges Git til version styring undervejs.
 
 # Rapport
 [Rapport]:
-> Dertil også et dokument der beskriver udviklingen med udgangspunkt i problemstillingen, med fokus på ikke trivielle, gerne besværlige punkter i udviklingen. Produktet beskrives udførligt. Proces præsenteredes med udgangspunkt i fremgangsmåde og overvejelser.
 
 ### Projektet omhandlede at kreere et spil, der på en <[Spilleplade] med 10x20 felter lavede tilfældige minefelter, hvor brugeren ikke måtte klikke på. <[Minefelter]
 
@@ -55,7 +54,7 @@ Der bruges Git til version styring undervejs.
 
 [Spilleplade]: script.js
 
-Generering af selve spillepladen, blev lavet med et for loop, for loopet generere 200 felter. Det gøres ved at [i] øges med 1 for hver af 10*20 felter === 200; Derved generer for loopet, 200 divs === (bokse); Hver boks blev tildelt et className blot for at gøre materialet mere overskueligt. Dette className blev +1 grundet at index er 0, så boks 0 hed boks 1 i stedet; Til sidst apender den alle divs på spillebrættet
+< Generering af selve spillepladen, blev lavet med et for loop, for loopet generere 200 felter. Det gøres ved at [i] øges med 1 for hver af 10*20 felter === 200; Derved generer for loopet, 200 divs === (bokse); Hver boks blev tildelt et className blot for at gøre materialet mere overskueligt. Dette className blev +1 grundet at index er 0, så boks 0 hed boks 1 i stedet; Til sidst apender den alle divs på spillebrættet
 ```javascript
 ;
 /* -------------------------- Genererer 10*20 bokse ------------------------- */
