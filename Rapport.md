@@ -24,7 +24,7 @@ Se [Rapport]
 -
 Se [Projektbeskrivelse] 
 
-
+# Projektbeskrivelse
 [Projektbeskrivelse]:
 
 
@@ -38,7 +38,7 @@ Se [Projektbeskrivelse]
 
 Der bruges Git til version styring undervejs. 
 
-
+# Rapport
 [Rapport]:
 > Dertil også et dokument der beskriver udviklingen med udgangspunkt i problemstillingen, med fokus på ikke trivielle, gerne besværlige punkter i udviklingen. Produktet beskrives udførligt. Proces præsenteredes med udgangspunkt i fremgangsmåde og overvejelser.
 
