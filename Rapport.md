@@ -37,7 +37,7 @@ Se [Projektbeskrivelse]
 
 
 
-Der bruges Git til version styring undervejs. 
+### Der bruges Git til version styring undervejs. 
 
 # Rapport
 [Rapport]:
@@ -54,7 +54,7 @@ Der bruges Git til version styring undervejs.
 
 [Spilleplade]: script.js
 
-< Generering af selve spillepladen, blev lavet med et for loop, for loopet generere 200 felter. Det gøres ved at [i] øges med 1 for hver af 10*20 felter === 200; Derved generer for loopet, 200 divs === (bokse); Hver boks blev tildelt et className blot for at gøre materialet mere overskueligt. Dette className blev +1 grundet at index er 0, så boks 0 hed boks 1 i stedet; Til sidst apender den alle divs på spillebrættet
+*<Generering af selve spillepladen, blev lavet med et for loop, for loopet generere 200 felter. Det gøres ved at [i] øges med 1 for hver af 10 gange 20 felter === 200; Derved generer for loopet, 200 divs === (bokse); Hver boks blev tildelt et className blot for at gøre materialet mere overskueligt. Dette className blev +1 grundet at index er 0, så boks 0 hed boks 1 i stedet; Til sidst apender den alle divs på spillebrættet*
 ```javascript
 ;
 /* -------------------------- Genererer 10*20 bokse ------------------------- */
