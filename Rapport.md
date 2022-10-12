@@ -54,8 +54,9 @@ Der bruges Git til version styring undervejs.
 
 [Spilleplade]: script.js
 
+Generering af selve spillepladen, blev lavet med et for loop, for loopet generere 200 felter. Det gøres ved at [i] øges med 1 for hver af 10*20 felter === 200; Derved generer for loopet, 200 divs === (bokse); Hver boks blev tildelt et className blot for at gøre materialet mere overskueligt. Dette className blev +1 grundet at index er 0, så boks 0 hed boks 1 i stedet; Til sidst apender den alle divs på spillebrættet
 ```javascript
-`Generering af selve spillepladen, blev lavet med et for loop, for loopet generere 200 felter. Det gøres ved at [i] øges med 1 for hver af 10*20 felter === 200; Derved generer for loopet, 200 divs === (bokse); Hver boks blev tildelt et className blot for at gøre materialet mere overskueligt. Dette className blev +1 grundet at index er 0, så boks 0 hed boks 1 i stedet; Til sidst apender den alle divs på spillebrættet`;
+;
 /* -------------------------- Genererer 10*20 bokse ------------------------- */
 for (let i = 0; i < 10 * 20; i++) {
   const box = document.createElement("div");
@@ -66,8 +67,8 @@ for (let i = 0; i < 10 * 20; i++) {
 
 [Minefelter]: script.js
 
+Startet med at lave et array hvor jeg kan tilføje minerne. Her 25 miner. Jeg laver derfor et for loop der ${m = 0; m < 25; m++} så den kører 25 gange. inde i loopet kører jeg en ${Math.floor(Math.random())} for at vælge 25 tilfældige bokse, jeg påsætter værdien 200, så den vælger udfra de 200 tilgængelige bokse. jeg laver et if statement, for at fortælle den at hvis det generede nummer allerede findes i mit array, skal den minus m med 1 for at kører for loopet igen og derved genererer et nyt tal. Jeg fortæller programmet at hvis en boks er blevet til en mine, skal den tilføje minen til mit array og tilføje et click event der får spilleren til at tabe;
 ```javascript
-`Startet med at lave et array hvor jeg kan tilføje minerne. Her 25 miner. Jeg laver derfor et for loop der ${m = 0; m < 25; m++} så den kører 25 gange. inde i loopet kører jeg en ${Math.floor(Math.random())} for at vælge 25 tilfældige bokse, jeg påsætter værdien 200, så den vælger udfra de 200 tilgængelige bokse. jeg laver et if statement, for at fortælle den at hvis det generede nummer allerede findes i mit array, skal den minus m med 1 for at kører for loopet igen og derved genererer et nyt tal. Jeg fortæller programmet at hvis en boks er blevet til en mine, skal den tilføje minen til mit array og tilføje et click event der får spilleren til at tabe`;
 /* --------------------------- Genererer 25 miner --------------------------- */
 const mines = []
 for (let m = 0; m < 25; m++) {
@@ -84,8 +85,8 @@ for (let m = 0; m < 25; m++) {
 
 [Ikke-Minefelter]: script.js
 
+Jeg laver en forEach function for at tilgå hver og et felt. Hvis feltet ikke er en mine og man dobbeltklikker på det, vil der for forvandle sig til en mine. og hvis man klikker igen taber man spillet, da man har klikket på en mine; Jeg fortæller i bunden at hvis feltet ikke er en mine, får den classNamet safeSpot som er felterne der ikke er miner og kan kalde en function så jeg kan se tallet der viser hvor mange miner safeSpot er omringet af;
 ```javascript
-`Jeg laver en forEach function for at tilgå hver og et felt. Hvis feltet ikke er en mine og man dobbeltklikker på det, vil der for forvandle sig til en mine. og hvis man klikker igen taber man spillet, da man har klikket på en mine; Jeg fortæller i bunden at hvis feltet ikke er en mine, får den classNamet safeSpot som er felterne der ikke er miner og kan kalde en function så jeg kan se tallet der viser hvor mange miner safeSpot er omringet af`;
 /* -------------------------- Definerer boks typen -------------------------- */
 boxes.forEach((box) => {
   box.addEventListener("dblclick", () => {
@@ -104,8 +105,8 @@ boxes.forEach((box) => {
 
 [MinerOmkring]: script.js
 
+Her begyndte jeg at få problemer da jeg slet ikke kunne tænke mig til hvordan jeg skal affecte eller få værdier fra de andre bokse der lå omkring ikke-mine felterne. Og måttte til sidst give op da jeg ikke kunne løse det; Min tanke omkring det var, at finde alle bokse der containede className safeSpot === ikke-minfelter; og herefter finde className mine værdierne der lå omkring. Men kunne ikke komme videre med løsnigen desværre;
 ```javascript
-`Her begyndte jeg at få problemer da jeg slet ikke kunne tænke mig til hvordan jeg skal affecte eller få værdier fra de andre bokse der lå omkring ikke-mine felterne. Og måttte til sidst give op da jeg ikke kunne løse det; Min tanke omkring det var, at finde alle bokse der containede className safeSpot === ikke-minfelter; og herefter finde className mine værdierne der lå omkring. Men kunne ikke komme videre med løsnigen desværre`;
 /* ---------------- Function der finder omkringliggende miner --------------- */
 /* ---------------------------- Ved ikke hvordan ---------------------------- */
 function greenFields(box) {
@@ -119,7 +120,6 @@ function greenFields(box) {
 ```
 
 [localStorage]: script.js
-
 
 Jeg laver først et array som skal indeholde spillernavn og score. Bruger script sweetAlert2 for at få en pop-up box frem hvor brugeren kan skrive sit navn. Når brugeren har skrevet sit navn og klikker tilføj kalder den 2 funktioner.Jeg Første function logger den data jeg ønsker til localStorage, her spillerens navn og den score spilleren har fået; Hvis ${historyJSON} findes JSONparsen den mit array: Jeg lader storage finde dataen, men hvis navnet allerede findes, bliver det ikke tilføjer, dog vil det opdaterer spillerens point(virker ikke grundet, se:` <
   [MinerOmring];
