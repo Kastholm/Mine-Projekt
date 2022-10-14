@@ -45,12 +45,22 @@ function dead() {
 /* ---------------- Function der finder omkringliggende miner --------------- */
 /* ---------------------------- Ved ikke hvordan ---------------------------- */
 function greenFields(box) {
+  console.log(box)
   let numb = 0;
-  if (box.classList.contains("safeSpot")) {
+  box.setAttribute("data-value", numb);
+/*   for (let n = 0; n < boxes.length; n++) {
+    if(boxes[n -8].classList.contains("mine")|| boxes[n -10].classList.contains('mine') || boxes[n -9].classList.contains("mine") || boxes[n -1].classList.contains("mine") || boxes[n +2].classList.contains("mine") || boxes[n +9].classList.contains("mine") || boxes[n +10].classList.contains("mine") || boxes[n + 11].classList.contains("mine")){ 
+      numb++;
+    }
+    if(boxes[n].classList.contains("safeSpot")){
+     boxes[n].setAttribute("data-value", numb);
+    }
+  } */
+  /* if (box.classList.contains("safeSpot")) {
     box.addEventListener("click", () => {
       box.setAttribute("data-value", numb);
     });
-  }
+  } */
 }
 /* -------------------------------------------------------------------------- */
 /*                             Gemmer til storage                             */
@@ -111,3 +121,6 @@ function outputData() {
 }
 
 //Read more asdasd as [[Rapport.md]]
+
+
+// boxes inner value kommer an på hvor mange miner der er omkring
